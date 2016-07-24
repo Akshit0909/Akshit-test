@@ -5,32 +5,78 @@
 	PSEUDO
 </title>
 <style> 
-header li{
-	list-style: none;
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	background-image: url(images/123.JPG);
 }
+header li{
+	list-style: none
+}
+
 
 a:link, a:visited
 {    					         /* link: the sites which are not clicked and Visited: the sites that are visited.trying to make our links shape into buttons */ 
  text-decoration: none;
- background-color: black;
- border: 1px solid blue;
+ background-color: green;
+ border: 5px solid black;
  color: white;
- 
+ display: block;
+ width: 200px;
+ text-align: center;
+position: relative;
+margin-left: 240px;
+margin-bottom: 5px;
 }
-</style>
+
+a:hover, a:active{
+	color: black;
+	background-color: red;
+	margin-bottom: 10px;
+	font-size: 1.5em;          
+}
+
+ 
+header li:nth-child(3)
+{
+	font-size: 25px;
+}
+section > div{
+	position: relative;
+	margin-left: 240px;
+	margin-bottom: 3px;
+	width: 200px;
+	text-align: center;
+}
+section div:nth-child(odd){
+	background-color: grey;
+}
+
+section div:nth-child(4):hover
+{
+	background-color: green;
+	cursor: progress;
+} 
+h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+</style> 
 </head>
 
 <body>
 <h1> PSEUDO CLASS SELECTORS</h1>
 <header>
-	<ul>
-		<li><a href="www.google.com"> Google </a></li>
-		<li><a href="www.facebook.com"> Facebook </a></li>
+	<ul> 
+		<li><a href="http://www.google.com" target="_blank"> Google </a></li>   <!-- notice here how when i add "http:// the link will open and if don't it won't-->
+		<li><a href="www.facebook.com" target="_blank"> Facebook </a></li>
 		<li><a href="www.wikipedia.com" target="_blank"> Wikipedia </a></li> 
 	</ul>
 </header>
 	<section>
-	<div> Div 1</div><div> Div 2</div><div> Div 3</div><div> Div 4</div><div> Div 5</div><div> Div 6</div><div> Div 7</div><div> Div 8</div><div> Div 9</div><div> Div 10</div>
+	<div>Div 1</div><div style="font-size:1.2em;"> Div 2</div><div style="font-size:1.2em"> Div 3</div><div> Div 4</div><div> Div 5</div><div> Div 6</div><div> Div 7</div><div> Div 8</div><div> Div 9</div><div> Div 10</div>
 
 	</section>
 </body>
